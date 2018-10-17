@@ -1,4 +1,4 @@
-// const db = require('./database/postgres/model.js');
+const db = require('./database/postgres/model.js');
 const postgres = require('./database/postgres');
 const elastic = require('./database/elastic-search');
 const sequelize = require('sequelize');
