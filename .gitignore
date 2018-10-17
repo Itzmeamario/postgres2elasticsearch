@@ -1,0 +1,6 @@
+#ignores the node modules
+/node_modules
+
+#ignores the json files generated for importing
+/data.json
+/dataEdges.json
