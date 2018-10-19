@@ -2,10 +2,11 @@ const elasticsearch = require('elasticsearch');
 
 const connection = new elasticsearch.Client({
   host: 'localhost:9200',
-  log: 'trace'
+  keepAlive: true,
+  // log: 'trace'
 });
 
-connection.ping({ requestTimeout: 30000 }, error => {
+connection.ping({ requestTimeout: 90000 }, error => {
   if (error) {
     console.error('Elasticsearch cluster is down!');
   } else {

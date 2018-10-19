@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --max-old-space-size=12000 ./server/",
-    "doAll": "node ./"
+    "doAll": "node --max-old-space-size=8000 ./"
   },
   "keywords": [],
   "author": "",

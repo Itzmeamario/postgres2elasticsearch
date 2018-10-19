@@ -4,3 +4,10 @@
 #ignores the json files generated for importing
 /data.json
 /dataEdges.json
+/dataAddress.json
+/dataEntity.json
+/dataEntity1.json
+/dataIntermediary.json
+/dataOfficers.json
+/dataOfficers1.json
+/dataOther.json

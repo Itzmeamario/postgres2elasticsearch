@@ -4,12 +4,14 @@ const connection = require('./');
 const indexName = 'panama_papers';
 
 function deleteIndex() {
+  console.log('Deleting index!');
   return connection.indices.delete({
     index: indexName
   });
 }
 
 function createIndex() {
+  console.log('Creating index!');
   return connection.indices.create({
     index: indexName
   });
@@ -21,8 +23,14 @@ function indexExists() {
   });
 }
 
+function uploadBulk(data) {
+  console.log('Uploading bulk');
+  return connection.bulk({body:data});
+}
+
 module.exports = {
   deleteIndex,
   createIndex,
-  indexExists
+  indexExists,
+  uploadBulk
 }
